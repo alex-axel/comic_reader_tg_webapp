@@ -13,7 +13,13 @@
     <script type="text/javascript">
         var tg = window.Telegram.WebApp;
         tg.expand();
-        WebApp.showAlert(`Добро пожаловать, @${tg.WebAppUser.username}.`);
+        tg.showAlert(`Добро пожаловать, @${tg.WebAppUser.username}.`);
+    </script>
+
+    <script type="text/javascript">
+        var tg = window.Telegram.WebApp;
+        var username = tg.WebAppUser.username;
+        document.createElement('p').innerHTML = username;
     </script>
 </body>
 
