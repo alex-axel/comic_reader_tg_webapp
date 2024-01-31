@@ -11,8 +11,9 @@
 <body>
     <img src="https://aiogram-birdi7.readthedocs.io/en/latest/_static/logo.png">
     <script type="text/javascript">
-        var WebApp = window.Telegram.WebApp;
-        WebApp.showAlert(`Добро пожаловать, @${WebApp.WebAppUser.username}.`);
+        var tg = window.Telegram.WebApp;
+        tg.expand();
+        WebApp.showAlert(`Добро пожаловать, @${tg.WebAppUser.username}.`);
     </script>
 </body>
 
